@@ -7,9 +7,14 @@
 	<link rel="stylesheet" href="style.css" />
 </head>
 
-<body ng-cloak ng-csp>
-	<p>Hello {{name}}</p>
-	<ors-star></ors-star>
+<body ng-cloak ng-csp ng-init="myNote=4">
+	<p ng-init="myNote2='blabla'">Hello {{name}}</p>
+	<ors-star></ors-star><br>
+	<ors-star note="4"></ors-star><br>
+	<ors-star data-note="2"></ors-star><br>
+	<ors-star x-note="3"></ors-star><br>
+	<ors-star x-note="myNote"></ors-star><br>
+	<ors-star x-note="myNote2"></ors-star><br>
 	<script src="../node_modules/angular/angular.js"></script>
 	<script src="app.js"></script>
 	<script src="ors-star/ors-star.js"></script>
