@@ -17,8 +17,13 @@
 			// 		}
 			// 	};
 			// },
-			controller: ['$scope', function OrsStarCtrl($scope) {
+			controller: ['$scope', '$element', function OrsStarCtrl($scope, $element) {
 				console.log('OrsStarCtrl', arguments);
+				let html = '';
+				for (let i = 0; i < 5; i++) {
+					html+='<img src="./ors-star/img/yellow_star.png" >';
+				}
+				$element.html(html);
 			}],
 		};
 	});
