@@ -1,9 +1,9 @@
-(function () {
-	'use strict';
+import 'angular/angular-csp.css';
+import './style.scss';
+import 'angular';
+import './ors-star/ors-star.js';
+const app = angular.module('main', ['ors-star']);
 
-	var app = angular.module('main', ['ors-star']);
-
-	app.run(function ($rootScope) {
-		$rootScope.name = 'Jacques-Olivier';
-	});
-})();
+app.run(function($rootScope) {
+	$rootScope.name = 'Mohamed-Abidar';
+});
