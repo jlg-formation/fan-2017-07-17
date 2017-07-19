@@ -11,5 +11,9 @@
   "license": "ISC",
   "dependencies": {
     "angular": "^1.6.5"
+  },
+  "devDependencies": {
+    "express": "^4.15.3",
+    "serve-index": "^1.9.0"
   }
 }
