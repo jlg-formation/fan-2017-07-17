@@ -7,14 +7,17 @@
 </head>
 
 <body ng-cloak ng-csp ng-init="myNote=4">
-	<p ng-init="myNote2='blabla'">Hello {{name}}</p>
-	<ors-star></ors-star><br>
-	<ors-star note="4"></ors-star><br>
-	<ors-star data-note="2"></ors-star><br>
-	<ors-star x-note="3"></ors-star><br>
-	<input ng-model="myNote"><br>
-	<ors-star x-note="myNote"></ors-star><br>
-	<ors-star x-note="myNote2"></ors-star><br>
+	<header>
+		<menu>
+			<item><a ui-sref="home">Home</a></item>
+			<item><a ui-sref="products">Products</a></item>
+			<item><a ui-sref="services">Services</a></item>
+			<item><a ui-sref="contact">Contact</a></item>
+		</menu>
+	</header>
+	<ui-view></ui-view>
+	<footer>Copyright Coucou</footer>
+	
 	<script src="wpk/bundle.js"></script>
 </body>
 
