@@ -6,7 +6,7 @@ import productsHtml from './tmpl/products.html';
 import servicesHtml from './tmpl/services.html';
 import contactHtml from './tmpl/contact.html';
 
-app.config(function($stateProvider, $locationProvider) {
+app.config(function($stateProvider, $locationProvider, $urlRouterProvider) {
 	'ngInject';
 	$locationProvider
 			.html5Mode(true);
@@ -31,4 +31,5 @@ app.config(function($stateProvider, $locationProvider) {
 		url: '/contact',
 		template: contactHtml
 	});
+	$urlRouterProvider.otherwise('/');
 });
