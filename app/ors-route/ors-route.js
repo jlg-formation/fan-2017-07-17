@@ -6,8 +6,11 @@ import productsHtml from './tmpl/products.html';
 import servicesHtml from './tmpl/services.html';
 import contactHtml from './tmpl/contact.html';
 
-app.config(function($stateProvider) {
+app.config(function($stateProvider, $locationProvider) {
 	'ngInject';
+	$locationProvider
+			.html5Mode(true);
+
 	$stateProvider.state( {
 		name: 'home',
 		url: '/',
