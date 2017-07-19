@@ -7,5 +7,5 @@ import './ors-log.js';
 const app = angular.module('main', ['ors-star', 'ors-route', 'ors-log']);
 
 app.run(function($rootScope) {
-	$rootScope.name = 'Mohamed-Abidar';
+	$rootScope.name = 'Mohamed-DJENOUAL';
 });
