@@ -1,4 +1,4 @@
-var app = angular.module('ors-star', []);
+const app = angular.module('ors-star', []);
 
 app.component('orsStar', {
 	bindings: {
@@ -9,7 +9,7 @@ app.component('orsStar', {
 			const ctrl = this;
 			console.log('OrsStarCtrl', arguments);
 			ctrl.update = function(newNote) {
-				console.log('scopeUpdate', arguments);
+				console.log('scopeUpdate xxx', arguments);
 				ctrl.n = newNote;
 			};
 
