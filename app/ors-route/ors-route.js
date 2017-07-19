@@ -10,6 +10,11 @@ function ProductCtrl($http, $log) {
 	'ngInject';
 	this.start = function() {
 		$log.debug('start');
+		$http.get('../ws/s1').then((response) => {
+			$log.debug('s1', response);
+		}).catch((error) => {
+			$log.error('s1', error);
+		});
 	};
 
 }
